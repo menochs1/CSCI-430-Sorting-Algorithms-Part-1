@@ -4,8 +4,8 @@ TARGET = main
 
 all: $(TARGET)
 
-$(TARGET): mergesort.o quicksort.o selectionSortA.o selectionSortB.o bubbleSortA.o bubbleSortB.o bubbleSortC.o main.o
-	$(CC) -g -Wall -Wextra -o $(TARGET) mergesort.o quicksort.o selectionSortA.o selectionSortB.o bubbleSortA.o bubbleSortB.o bubbleSortC.o main.o
+$(TARGET): mergesort.o quicksort.o selectionSortA.o selectionSortB.o bubbleSortA.o bubbleSortB.o bubbleSortC.o insertionsort.o countingsort.o main.o
+	$(CC) -g -Wall -Wextra -o $(TARGET) mergesort.o quicksort.o selectionSortA.o selectionSortB.o bubbleSortA.o bubbleSortB.o bubbleSortC.o insertionsort.o countingsort.o main.o
 
 mergesort.o: mergesort.cpp mergesort.hpp
 	$(CC) -g $(CFLAGS) mergesort.cpp
@@ -27,6 +27,12 @@ bubbleSortB.o: bubbleSortB.cpp bubbleSortB.hpp
 
 bubbleSortC.o: bubbleSortC.cpp bubbleSortC.hpp
 	$(CC) -g $(CFLAGS) bubbleSortC.cpp
+
+insertionsort.o: insertionsort.cpp insertionsort.hpp
+	$(CC) -g $(CFLAGS) insertionsort.cpp
+
+countingsort.o: countingsort.cpp countingsort.hpp
+	$(CC) -g $(CFLAGS) countingsort.cpp
 
 main.o: main.cpp mergesort.hpp
 	$(CC) -g $(CFLAGS) main.cpp
