@@ -1,4 +1,4 @@
-#include "bubbleSortA.hpp"
+#include "bubbleSortA.h"
 
 void bubbleSortA(std::vector<int>& arr) {
     int n = arr.size();

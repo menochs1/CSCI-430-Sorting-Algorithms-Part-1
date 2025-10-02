@@ -1,5 +1,5 @@
-#ifndef BUBBLESORTA_HPP
-#define BUBBLESORTA_HPP
+#ifndef BUBBLESORTA_H
+#define BUBBLESORTA_H
 
 #include <vector>
 #include <algorithm> // for std::swap

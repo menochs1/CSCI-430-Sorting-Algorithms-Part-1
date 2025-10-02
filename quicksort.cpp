@@ -1,4 +1,4 @@
-#include "quicksort.hpp"
+#include "quicksort.h"
 
 // Partition function to place pivot element at correct position
 static int partition(std::vector<int> &arr, int low, int high)

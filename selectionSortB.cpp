@@ -1,4 +1,4 @@
-#include "selectionSortB.hpp"
+#include "selectionSortB.h"
 
 // Selection Sort Algorithm - Version B
 void selectionSortB(std::vector<int> &arr)

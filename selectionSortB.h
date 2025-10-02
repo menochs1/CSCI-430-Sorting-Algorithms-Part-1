@@ -1,5 +1,5 @@
-#ifndef SELECTIONSORTB_HPP
-#define SELECTIONSORTB_HPP
+#ifndef SELECTIONSORTB_H
+#define SELECTIONSORTB_H
 
 #include <vector>
 #include <iostream>

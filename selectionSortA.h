@@ -1,5 +1,5 @@
-#ifndef SELECTIONSORTA_HPP
-#define SELECTIONSORTA_HPP
+#ifndef SELECTIONSORTA_H
+#define SELECTIONSORTA_H
 
 #include <vector>
 #include <iostream>

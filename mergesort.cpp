@@ -1,4 +1,4 @@
-#include "mergesort.hpp"
+#include "mergesort.h"
 
 // Merges two sorted subarrays into a single sorted subarray
 static void merge(std::vector<int> &arr, int start, int midPoint, int end)

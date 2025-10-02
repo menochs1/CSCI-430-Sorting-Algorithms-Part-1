@@ -1,4 +1,4 @@
-#include "bubbleSortC.hpp"
+#include "bubbleSortC.h"
 
 // Bubble sort with swap detection whcih starts at the end of the list and works to the beginning.
 

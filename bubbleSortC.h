@@ -1,5 +1,5 @@
-#ifndef BUBBLESORTC_HPP
-#define BUBBLESORTC_HPP
+#ifndef BUBBLESORTC_H
+#define BUBBLESORTC_H
 
 #include <vector>
 #include <algorithm>
