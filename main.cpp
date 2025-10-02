@@ -69,15 +69,14 @@ int main()
     std::cout << " Insertion Sort" << std::endl;
 
     std::vector<int> data9 = {38, 27, 43, -3, 9, 82, 10};
-    int maxVal = *std::max_element(data9.begin(), data9.end());
-    countingsort(data9, data9.size(), maxVal + 1);
+    countingsort(data9);
     for (const auto &num : data9) {
         std::cout << num << " ";
     }
     std::cout << " Counting Sort" << std::endl;
 
     std::vector<int> data10 = {38, 27, 43, -3, 9, 82, 10};
-    radixsort(data10, data10.size(), 32); // Assuming 32 bits for
+    radixsort(data10); // Assuming 32 bits for
     for (const auto &num : data10) {
         std::cout << num << " ";
     }

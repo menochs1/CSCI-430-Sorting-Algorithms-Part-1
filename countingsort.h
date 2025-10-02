@@ -4,6 +4,7 @@
 #include <vector>
 #include <algorithm>
 
-void countingsort(std::vector<int>& arr, int size, int maxVal);
+void countingsort(std::vector<int>& arr);
+static void countingSortHelper(std::vector<int>& arr, int size, int maxVal);
 
 #endif

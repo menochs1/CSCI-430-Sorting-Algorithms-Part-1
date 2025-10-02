@@ -1,5 +1,7 @@
 #include "mergesort.h"
 
+
+
 // Merges two sorted subarrays into a single sorted subarray
 static void merge(std::vector<int> &arr, int start, int midPoint, int end)
 {
@@ -58,14 +60,14 @@ static void merge(std::vector<int> &arr, int start, int midPoint, int end)
 }
 
 // Recursive helper function for mergesort
-static void mergesortHelper(std::vector<int> &arr, int start, int end)
+static void mergeSortHelper(std::vector<int> &arr, int start, int end)
 {
     if(start >= end) return;
 
     int midPoint = (start + end) / 2;
 
-    mergesortHelper(arr, start, midPoint);
-    mergesortHelper(arr, midPoint + 1, end);
+    mergeSortHelper(arr, start, midPoint);
+    mergeSortHelper(arr, midPoint + 1, end);
 
     merge(arr, start, midPoint, end);
 }
@@ -73,5 +75,5 @@ static void mergesortHelper(std::vector<int> &arr, int start, int end)
 // Public function to initiate mergesort
 void mergesort(std::vector<int> &arr)
 {
-    mergesortHelper(arr, 0, arr.size() - 1);
+    mergeSortHelper(arr, 0, arr.size() - 1);
 }

@@ -1,6 +1,13 @@
 #include "countingsort.h"
 
-void countingsort(std::vector<int>& arr, int size, int maxVal) {
+void countingsort(std::vector<int>& arr)
+{
+    int maxVal = *std::max_element(arr.begin(), arr.end());
+    
+    countingSortHelper(arr, arr.size(), maxVal);
+}
+
+static void countingSortHelper(std::vector<int>& arr, int size, int maxVal) {
     if (size == 0) return;
 
     int minVal = *std::min_element(arr.begin(), arr.end());

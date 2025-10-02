@@ -5,5 +5,7 @@
 #include <iostream>
 
 void mergesort(std::vector<int> &arr);
+static void mergeSortHelper(std::vector<int> &arr, int start, int end);
+static void merge(std::vector<int> &arr, int start, int midPoint, int end);
 
 #endif
